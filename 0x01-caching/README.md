@@ -5,11 +5,11 @@ In this project, you will learn about different caching algorithms.
 
 ## Resources
 Read or watch:
-- Cache replacement policies(https://en.wikipedia.org/wiki/Cache_replacement_policies#First_In_First_Out_%28FIFO%29) - FIFO
-- Cache replacement policies(https://en.wikipedia.org/wiki/Cache_replacement_policies#Last_In_First_Out_%28LIFO%29) - LIFO
-- Cache replacement policies(https://en.wikipedia.org/wiki/Cache_replacement_policies#Least_Recently_Used_%28LRU%29) - LRU
-- Cache replacement policies(https://en.wikipedia.org/wiki/Cache_replacement_policies#Most_Recently_Used_%28MRU%29) - MRU
-- Cache replacement policies(https://en.wikipedia.org/wiki/Cache_replacement_policies#Least-Frequently_Used_%28LFU%29) - LFU
+- [Cache replacement policies](https://en.wikipedia.org/wiki/Cache_replacement_policies#First_In_First_Out_%28FIFO%29) - FIFO
+- [Cache replacement policies](https://en.wikipedia.org/wiki/Cache_replacement_policies#Last_In_First_Out_%28LIFO%29) - LIFO
+- [Cache replacement policies](https://en.wikipedia.org/wiki/Cache_replacement_policies#Least_Recently_Used_%28LRU%29) - LRU
+- [Cache replacement policies](https://en.wikipedia.org/wiki/Cache_replacement_policies#Most_Recently_Used_%28MRU%29) - MRU
+- [Cache replacement policies](https://en.wikipedia.org/wiki/Cache_replacement_policies#Least-Frequently_Used_%28LFU%29) - LFU
 
 ## Learning Objectives
 By the end of this project, you are expected to be able to explain the following topics without the help of Google:
