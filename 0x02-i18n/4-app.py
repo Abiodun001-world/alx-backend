@@ -1,47 +1,16 @@
-#!/usr/bin/env python3
-"""
-Flask app
-"""
-from flask import (
-    Flask,
-    render_template,
-    request
-)
-from flask_babel import Babel
-
-
-class Config(object):
-    """
-    Configuration for Babel
-    """
-    LANGUAGES = ["en", "fr"]
-    BABEL_DEFAULT_LOCALE = "en"
-    BABEL_DEFAULT_TIMEZONE = "UTC"
-
+from flask import Flask, request
 
 app = Flask(__name__)
-app.config.from_object(Config)
-babel = Babel(app)
 
+# Your existing code for translations and setting up the Babel extension
 
-@babel.localeselector
 def get_locale():
-    """
-    Select and return best language match based on supported languages
-    """
-    loc = request.args.get('locale')
-    if loc in app.config['LANGUAGES']:
-        return loc
-    return request.accept_languages.best_match(app.config['LANGUAGES'])
+    if 'locale' in request.args and request.args['locale'] in ['en', 'fr']:
+        return request.args['locale']
+    return None  # Resort to the default behavior
 
+# Your existing route definitions and other parts of the Flask app
 
-@app.route('/', strict_slashes=False)
-def index() -> str:
-    """
-    Handles / route
-    """
-    return render_template('4-index.html')
+if __name__ == '__main__':
+    app.run()
 
-
-if __name__ == "__main__":
-    app.run(port="5000", host="0.0.0.0", debug=True)
